@@ -23,7 +23,7 @@ function App() {
 
   return (
     <section className="min-h-screen pt-20">
-      <nav className="text-white px-8 py-1 fixed left-0 right-0 top-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
+      <nav className="text-white px-2 py-0 fixed left-0 right-0 top-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10">
         <Navbar navLinks={NAV_LINKS} />
       </nav>
       <Outlet />

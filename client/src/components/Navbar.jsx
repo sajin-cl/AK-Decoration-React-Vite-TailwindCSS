@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { AiOutlineMenuFold } from "react-icons/ai";
 import { GiLotusFlower } from "react-icons/gi";
+import { RiMenu3Fill } from "react-icons/ri";
 
 function Navbar({ navLinks }) {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -15,7 +15,7 @@ function Navbar({ navLinks }) {
         <div className="flex items-center">
           <img src="/logo.png" alt="logo" className="w-16" />
           <span className="inline-block font-mono">AK
-           <span className="text-amber-300"> DECORATION</span>
+            <span className="text-amber-300"> DECORATION</span>
           </span>
         </div>
 
@@ -54,7 +54,7 @@ function Navbar({ navLinks }) {
                       <Link
                         key={child.id}
                         to={child.href}
-                        className="block px-5 py-3 hover:bg-amber-100 text-sm"
+                        className="block px-5 py-2 hover:bg-amber-100 text-sm"
                       >
                         {child.name}
                       </Link>
@@ -64,6 +64,11 @@ function Navbar({ navLinks }) {
               )}
             </div>
           ))}
+          <button
+            className="text-black font-mono font-bold text-sm bg-amber-300 py-1 px-5 rounded-full cursor-pointer hover:bg-amber-400"
+          >
+            Whatsapp
+          </button>
         </div>
 
         {/* MOBILE BUTTON */}
@@ -75,7 +80,7 @@ function Navbar({ navLinks }) {
             {mobileOpen ? (
               <GiLotusFlower size={28} className="text-amber-300" />
             ) : (
-              <AiOutlineMenuFold size={28} className="text-amber-300" />
+              <RiMenu3Fill size={28} className="text-amber-300" />
             )}
 
           </button>
@@ -128,6 +133,7 @@ function Navbar({ navLinks }) {
             )}
           </div>
         ))}
+
       </div>
     </>
   );
