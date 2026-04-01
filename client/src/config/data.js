@@ -1,4 +1,4 @@
-/* Why we choose us section */
+/* Why we choose us section.. */
 export const WHY_WE_CHOOSE_US = [
   {
     id: 1, logo: '/ai.gif', title: 'Creative & Stylish Designs',
