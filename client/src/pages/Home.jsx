@@ -1,7 +1,13 @@
+import Intro from "@/components/Intro";
+import WhyChooseUs from "@/components/WhyChooseUS";
+import { WHY_WE_CHOOSE_US } from "../config/data";
+
+
 function Home() {
   return (
     <>
-      <h1 className="text-amber-200">Home Page</h1>
+      <Intro />
+      <WhyChooseUs service={WHY_WE_CHOOSE_US} />
     </>
   )
 };

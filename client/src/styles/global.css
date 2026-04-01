@@ -14,7 +14,12 @@
   body {
     scrollbar-width: none;
     -ms-overflow-style: none;
-   
+    background-image: url('/Background-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100dvh;
   }
 
   html::-webkit-scrollbar,
