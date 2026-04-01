@@ -2,7 +2,7 @@ function Intro() {
   return (
     <section
       id="intro"
-      className="py-6 px-24 min-h-screen w-full"
+      className="py-14 px-10  w-full bg-black/50"
     >
       <h1 className="text-gray-300 text-2xl font-bold font-mono">WEDDING & FLORAL DECORATIONS IN KANYAKUMARI</h1>
       <p className="text-gray-400 text-xs font-mono mb-3">Transforming your special moments into unforgettable experiences</p>
@@ -24,7 +24,7 @@ function Intro() {
       <div className="btn-section flex gap-10">
         <button
           className="hover:text-white font-mono border border-white text-sm bg-amber-300 py-1 px-6 rounded-full cursor-pointer hover:bg-transparent transition duration-1000"
-        >CALL NOW
+        >BOOK NOW
         </button>
         <button
           className="text-white font-mono  text-sm border border-amber-300 py-1 px-6 rounded-full cursor-pointer hover:text-amber-300 transition duration-500"

@@ -14,7 +14,7 @@
   body {
     scrollbar-width: none;
     -ms-overflow-style: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/Background-image.webp');
+    background-image: url('/Background-image.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
