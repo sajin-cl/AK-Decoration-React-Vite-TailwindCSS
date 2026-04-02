@@ -31,9 +31,9 @@ function Navbar({ navLinks }) {
 
               {/*DESKTOP MAIN LINK */}
               <NavLink
-                to={link.href || "#"}
+                to={link?.href}
                 className={({ isActive }) =>
-                  `flex items-center gap-1 hover:text-amber-300 text-sm transition ${isActive ? "text-white" : "text-amber-300"
+                  `flex items-center gap-1 hover:text-amber-300 text-sm transition ${isActive ? "text-amber-300" : "text-white"
                   }`
                 }
               >
