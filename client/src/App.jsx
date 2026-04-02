@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { href, Outlet } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 
 
@@ -9,15 +9,16 @@ const NAV_LINKS = [
   {
     id: 2,
     name: "Services",
+    href: '/wedding-decoration',
     children: [
-      { id: 21, name: "Wedding Decoration", href: "#" },
-      { id: 22, name: "Floral Decoration", href: "#" },
-      { id: 23, name: "Stage Decoration", href: "#" },
+      { id: 21, name: "Wedding Decoration", href: "/wedding-decoration" },
+      { id: 22, name: "Floral Decoration", href: "/floral-decoration" },
+      { id: 23, name: "Stage Decoration", href: "/stage-decoration" },
     ],
   },
-  { id: 3, name: "Gallery", href: "#" },
-  { id: 4, name: "About", href: "#" },
-  { id: 5, name: "Contact", href: "#" },
+  { id: 3, name: "Gallery", href: "/gallery" },
+  { id: 4, name: "About", href: "/about" },
+  { id: 5, name: "Contact", href: "/contact" },
 ];
 
 

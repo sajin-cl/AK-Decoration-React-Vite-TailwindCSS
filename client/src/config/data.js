@@ -25,3 +25,21 @@ export const WHY_WE_CHOOSE_US = [
     content: 'We customize every design based on your needs, style, and budget.'
   },
 ];
+
+export const SERVICES = [
+  {
+    title: "Floral",
+    desc: "Elegant wedding stage and full event decoration.",
+    img: "/floral-decoration.jpg",
+  },
+  {
+    title: "Wedding",
+    desc: "Creative floral designs for all occasions.",
+    img: "/wedding-decoration.jpg",
+  },
+  {
+    title: "Stage",
+    desc: "Stylish stage setups with lighting and props.",
+    img: "/stage-decoration.jpg",
+  },
+];
