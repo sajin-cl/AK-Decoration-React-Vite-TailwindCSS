@@ -9,7 +9,7 @@ function Gallery({ images, limit }) {
         {images.slice(0, limit).map((img, index) => (
           <div
             key={index}
-            className="overflow-hidden  shadow-md group cursor-pointer"
+            className="overflow-hidden shadow-md group cursor-pointer"
           >
             <img
               src={img}

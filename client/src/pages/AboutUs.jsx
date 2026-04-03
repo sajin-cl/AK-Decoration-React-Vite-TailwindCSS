@@ -57,6 +57,7 @@ function AboutUs() {
             src="/founder.jpeg"
             alt="Founder"
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
 
@@ -69,11 +70,9 @@ function AboutUs() {
             Founder & Creative Director
           </p>
 
-          <p className="text-gray-300 text-sm leading-relaxed">
-            with a passion for creativity and attention to detail, our founder has
-            built <span className="text-amber-300"> {COMPANY_NAME} </span> into a trusted name in event styling. With years of
-            experience in wedding and floral decorations, they focus on delivering
-            unique, elegant, and memorable setups tailored to each client’s vision.
+          <p className="text-gray-300 text-sm leading-relaxed tracking-wide font-sans">
+            A young, passionate creative with a keen eye for detail, our founder has
+            built <span className="text-amber-300">{COMPANY_NAME}</span> into a trusted name in event styling. With years of experience in wedding and floral decorations, they focus on delivering unique, elegant, and memorable setups tailored to each client’s vision.
           </p>
         </div>
       </div>
