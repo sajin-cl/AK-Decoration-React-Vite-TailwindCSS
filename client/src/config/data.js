@@ -1,6 +1,12 @@
 import { MdAttachEmail, MdOutlineWifiCalling3, MdWhatsapp } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 
+export const PERSONAL_NUMBER = 917550305180;
+export const EXPERIENCE = new Date().getFullYear() - 2021;
+export const ADMIN_NAME = 'AJITH KUMAR';
+export const COMPANY_NAME = 'AK DECORATION SERVICE';
+
+
 /* NavLinks */
 export const NAV_LINKS = [
   { id: 1, name: "Home", href: "/" },
@@ -40,7 +46,7 @@ export const WHY_WE_CHOOSE_US = [
   },
   {
     id: 5, logo: '/experience.gif', title: 'Experience in Event Decoration',
-    content: `We have ${new Date().getFullYear() - 2021} years experience of handling different types of decoration setups for various events.`
+    content: `We have ${EXPERIENCE} years experience of handling different types of decoration setups for various events.`
   },
   {
     id: 6, logo: '/Customer_Support.gif', title: 'Budget-Friendly Service',
@@ -72,7 +78,15 @@ export const SOCIAL_lINKS = [
     icon: MdAttachEmail,
     href: "https://mail.google.com/mail/?view=cm&fs=1&to=sajincl222@gmail.com&su=Decoration%20Service%20Inquiry&body=Hi%20AK%20Decoration,%0A%0AI%20would%20like%20to%20inquire%20about%20your%20decoration%20services.%20Please%20share%20details%20about%20availability,%20pricing,%20and%20packages.%0A%0AThank%20you.",
   },
-  { icon: MdOutlineWifiCalling3, href: "tel:+917550305180" },
+  { icon: MdOutlineWifiCalling3, href: `tel:+${PERSONAL_NUMBER}` },
   { icon: FaInstagram, href: "https://www.instagram.com/ak_decoration_service/?hl=en" },
-  { icon: MdWhatsapp, href: "https://wa.me/917550305180?text=Hello%20I%20need%20decoration%20service" }
+  { icon: MdWhatsapp, href: `https://wa.me/${PERSONAL_NUMBER}?text=Hello%20I%20need%20decoration%20service` }
+];
+
+export const GALLERY_DATA = [
+  "https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "https://images.pexels.com/photos/265947/pexels-photo-265947.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "https://images.pexels.com/photos/796606/pexels-photo-796606.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800",
 ];

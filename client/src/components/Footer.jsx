@@ -8,7 +8,7 @@ const Footer = () => {
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
       viewport={{ once: true }}
-      className="w-full bg-stone-950 border-t border-lime-300/40 relative"
+      className="w-full bg-stone-950 border-t border-amber-300/40 relative"
     >
       <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Logo */}
@@ -50,8 +50,8 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="text-white/70 text-xs  text-center py-4 border-t border-white/10 ">
-        © {new Date().getFullYear()} sajin-cl. All rights reserved.
+      <div className="text-white/70 text-xs  text-center py-4 border-t border-white/10 hover:text-white transition duration-500">
+        © {new Date().getFullYear()} AK Decoration. All rights reserved - Developed by Sajin CL.
       </div>
     </motion.footer>
   );
