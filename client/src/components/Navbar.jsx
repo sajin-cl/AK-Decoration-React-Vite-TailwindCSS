@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { GiLotusFlower } from "react-icons/gi";
 import { RiMenu3Fill } from "react-icons/ri";
+import { PERSONAL_NUMBER } from "@/config/data";
 
 function Navbar({ navLinks }) {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -65,6 +66,12 @@ function Navbar({ navLinks }) {
             </div>
           ))}
           <button
+            onClick={() =>
+              window.open(
+                `https://wa.me/${PERSONAL_NUMBER}?text=Hi%20I%20need%20decoration%20service",
+                "_blank`
+              )
+            }
             className="text-black font-mono font-bold text-sm bg-amber-300 py-1 px-5 rounded-full cursor-pointer hover:bg-amber-400"
           >
             Whatsapp

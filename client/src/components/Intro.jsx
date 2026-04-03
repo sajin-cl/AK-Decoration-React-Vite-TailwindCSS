@@ -1,3 +1,5 @@
+import { PERSONAL_NUMBER } from "@/config/data";
+
 function Intro() {
   return (
     <section
@@ -17,13 +19,21 @@ function Intro() {
       </p>
 
       <div className="btn-section flex gap-10">
+        <a href={`tel:+${PERSONAL_NUMBER}`}>
+          <button className="hover:text-white font-mono border border-white text-sm bg-amber-300 py-1 px-6 rounded-full cursor-pointer hover:bg-transparent transition duration-1000">
+            BOOK NOW
+          </button>
+        </a>
         <button
-          className="hover:text-white font-mono border border-white text-sm bg-amber-300 py-1 px-6 rounded-full cursor-pointer hover:bg-transparent transition duration-1000"
-        >BOOK NOW
-        </button>
-        <button
-          className="text-white font-mono  text-sm border border-amber-300 py-1 px-6 rounded-full cursor-pointer hover:text-amber-300 transition duration-500"
-        >WHATSAPP US
+          onClick={() =>
+            window.open(
+              `https://wa.me/${PERSONAL_NUMBER}?text=Hi%20I%20need%20decoration%20service`,
+              "_blank"
+            )
+          }
+          className="text-white font-mono text-sm border border-amber-300 py-1 px-6 rounded-full cursor-pointer hover:text-amber-300 transition duration-500"
+        >
+          WHATSAPP US
         </button>
       </div>
     </section>
