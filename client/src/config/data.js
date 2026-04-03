@@ -1,3 +1,25 @@
+import { MdAttachEmail, MdOutlineWifiCalling3, MdWhatsapp } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
+
+/* NavLinks */
+export const NAV_LINKS = [
+  { id: 1, name: "Home", href: "/" },
+  {
+    id: 2,
+    name: "Services",
+    href: '/wedding-decoration',
+    children: [
+      { id: 21, name: "Wedding Decoration", href: "/wedding-decoration" },
+      { id: 22, name: "Floral Decoration", href: "/floral-decoration" },
+      { id: 23, name: "Stage Decoration", href: "/stage-decoration" },
+    ],
+  },
+  { id: 3, name: "Gallery", href: "/gallery" },
+  { id: 4, name: "About", href: "/about" },
+  { id: 5, name: "Contact", href: "/contact" },
+];
+
+
 /* Why we choose us section.. */
 export const WHY_WE_CHOOSE_US = [
   {
@@ -42,4 +64,15 @@ export const SERVICES = [
     desc: "Stylish stage setups with lighting and props.",
     img: "/stage-decoration.jpg",
   },
+];
+
+/* --------------------------------------------------Social Links------------------------------------------------------------------- */
+export const SOCIAL_lINKS = [
+  {
+    icon: MdAttachEmail,
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=sajincl222@gmail.com&su=Decoration%20Service%20Inquiry&body=Hi%20AK%20Decoration,%0A%0AI%20would%20like%20to%20inquire%20about%20your%20decoration%20services.%20Please%20share%20details%20about%20availability,%20pricing,%20and%20packages.%0A%0AThank%20you.",
+  },
+  { icon: MdOutlineWifiCalling3, href: "tel:+917550305180" },
+  { icon: FaInstagram, href: "https://www.instagram.com/ak_decoration_service/?hl=en" },
+  { icon: MdWhatsapp, href: "https://wa.me/917550305180?text=Hello%20I%20need%20decoration%20service" }
 ];

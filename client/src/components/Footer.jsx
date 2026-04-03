@@ -1,0 +1,60 @@
+import { NAV_LINKS, SOCIAL_lINKS } from "@/config/data";
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'
+
+const Footer = () => {
+  return (
+    <motion.footer
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1, transition: { duration: 0.6 } }}
+      viewport={{ once: true }}
+      className="w-full bg-stone-950 border-t border-lime-300/40 relative"
+    >
+      <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        {/* Logo */}
+        <a
+          href="#hero"
+          className="text-white text-sm tracking-widest w-1/8 flex items-center justify-center">
+          <img src="/logo.png" alt="logo" loading="lazy" className="h-10 block" />
+          <div className="footer-logo-info">
+            <p className="text-xl font-poppins">AK</p>
+            <p className="text-xs text-amber-200">DECORATION</p>
+          </div>
+        </a>
+
+        {/* Links */}
+        <div className="text-white font-mono flex flex-wrap justify-center items-center gap-5 mx-auto">
+          {NAV_LINKS.map((link, idx) => (
+            <a key={idx} href={link?.href} className="hover:text-amber-300 transition">
+              {link.name}
+            </a>
+          ))}
+        </div>
+
+        {/* Social */}
+        <div className="text-white text-xl flex gap-3">
+          {SOCIAL_lINKS.map((social, idx) => {
+            const Icon = social.icon;
+            return (
+              <Link
+                key={idx}
+                to={social.href}
+                className="p-2 rounded-full hover:bg-white/10 hover:text-amber-300 transition"
+              >
+                <Icon />
+              </Link>
+            );
+          })}
+        </div>
+
+      </div>
+
+      {/* Copyright */}
+      <div className="text-white/70 text-xs  text-center py-4 border-t border-white/10 ">
+        © {new Date().getFullYear()} sajin-cl. All rights reserved.
+      </div>
+    </motion.footer>
+  );
+};
+
+export default Footer;

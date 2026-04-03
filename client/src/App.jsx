@@ -1,25 +1,6 @@
-import { href, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navbar from "@/components/Navbar";
-
-
-
-/* NavLinks */
-const NAV_LINKS = [
-  { id: 1, name: "Home", href: "/" },
-  {
-    id: 2,
-    name: "Services",
-    href: '/wedding-decoration',
-    children: [
-      { id: 21, name: "Wedding Decoration", href: "/wedding-decoration" },
-      { id: 22, name: "Floral Decoration", href: "/floral-decoration" },
-      { id: 23, name: "Stage Decoration", href: "/stage-decoration" },
-    ],
-  },
-  { id: 3, name: "Gallery", href: "/gallery" },
-  { id: 4, name: "About", href: "/about" },
-  { id: 5, name: "Contact", href: "/contact" },
-];
+import { NAV_LINKS } from "./config/data";
 
 
 function App() {
