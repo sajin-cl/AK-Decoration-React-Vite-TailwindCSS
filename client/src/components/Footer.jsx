@@ -36,13 +36,15 @@ const Footer = () => {
           {SOCIAL_LINKS.map((social, idx) => {
             const Icon = social.icon;
             return (
-              <Link
+              <a
                 key={idx}
-                to={social.href}
+                href={social.href}  
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-white/10 hover:text-amber-300 transition"
               >
                 <Icon />
-              </Link>
+              </a>
             );
           })}
         </div>
