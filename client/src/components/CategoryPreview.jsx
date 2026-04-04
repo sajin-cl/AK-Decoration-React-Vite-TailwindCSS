@@ -1,7 +1,7 @@
 
 
 
-function CategoryPreview({services}) {
+function CategoryPreview({ services }) {
   return (
     <div className="bg-white px-6 md:px-10 py-10">
       <p className="text-amber-500 text-center mb-2 font-semibold">
@@ -26,13 +26,14 @@ function CategoryPreview({services}) {
             <img
               src={item.img}
               alt={item.title}
+              fetchPriority="high"
               className="w-full h-full  object-cover transform group-hover:scale-110 transition duration-500"
             />
 
             {/* Gradient Overlay */}
             <div className="absolute inset-0 group-hover:bg-gradient-to-b from-amber-100/50 to-transparent"></div>
 
-           {/*  details */}
+            {/*  details */}
             <div className="absolute bottom-6 left-6 text-white transform translate-y-6 group-hover:translate-y-0 transition duration-300">
               <h2 className="text-xl md:text-2xl font-bold">
                 {item.title}
