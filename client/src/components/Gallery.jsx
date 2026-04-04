@@ -4,14 +4,14 @@ const containerVariants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.10, 
+      staggerChildren: 0.10,
     },
   },
 };
 
 const cardVariants = {
-  hidden: { opacity: 0, y: -20 }, 
-  show: { opacity: 1, y: 0, transition: { duration: 0.5 } }, 
+  hidden: { opacity: 0, y: -20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
 function Gallery({ images, limit }) {
@@ -22,18 +22,22 @@ function Gallery({ images, limit }) {
       initial="hidden"
       animate="show"
     >
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {images.slice(0, limit).map((img, index) => (
           <motion.div
             key={index}
             className="overflow-hidden shadow-md group cursor-pointer"
             variants={cardVariants}
+            whileTap={{ scale: 0.95 }}  
           >
-            <img
+            <motion.img
               src={img}
               alt={`gallery-${index}`}
               loading="lazy"
-              className="w-full h-56 object-cover transform group-hover:scale-110 transition duration-300"
+              className="w-full h-56 object-cover"
+              whileTap={{ scale: 1.1 }}  
+              whileHover={{ scale: 1.1 }} 
+              transition={{ duration: 0.3 }}
             />
           </motion.div>
         ))}

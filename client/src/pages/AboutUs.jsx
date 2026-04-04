@@ -49,10 +49,10 @@ function AboutUs() {
       </div>
 
       {/* Founder Section */}
-      <div className="mt-16 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 py-10">
+      <div className="mt-16 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 py-10 ">
 
         {/* Image */}
-        <div className="w-40 h-40 md:w-full md:h-80 overflow-hidden rounded-full border-4 border-amber-300">
+        <div className="w-40 h-40 md:w-64 md:h-64 overflow-hidden rounded-full border-4 border-amber-300">
           <img
             src="/founder.jpeg"
             alt="Founder"
