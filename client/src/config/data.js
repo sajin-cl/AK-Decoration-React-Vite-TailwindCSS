@@ -1,6 +1,6 @@
 import { MdAttachEmail, MdOutlineWifiCalling3, MdWhatsapp } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
-import { href } from "react-router-dom";
+
 
 export const PERSONAL_NUMBER = 917550305180;
 export const EXPERIENCE = new Date().getFullYear() - 2021;

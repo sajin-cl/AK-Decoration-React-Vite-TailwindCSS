@@ -13,12 +13,12 @@ function Navbar({ navLinks }) {
       <div className="flex items-center justify-between">
 
         {/* LOGO */}
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src="/logo.png" alt="logo" className="w-16" />
-          <span className="inline-block font-mono">AK
-            <span className="text-amber-300"> DECORATION</span>
+          <span className="inline-block font-mono">
+            AK <span className="text-amber-300">DECORATION</span>
           </span>
-        </div>
+        </Link>
 
         {/* DESKTOP MENU */}
         <div className="hidden md:flex items-center gap-10">
@@ -29,47 +29,46 @@ function Navbar({ navLinks }) {
               onMouseEnter={() => setOpenDropdown(link.id)}
               onMouseLeave={() => setOpenDropdown(null)}
             >
-
-              {/*DESKTOP MAIN LINK */}
+              {/* MAIN LINK */}
               <NavLink
-                to={link?.href}
+                to={link.href}
                 className={({ isActive }) =>
-                  `flex items-center gap-1 hover:text-amber-300 text-sm transition ${isActive ? "text-amber-300" : "text-white"
+                  `flex items-center gap-1 text-sm transition ${isActive ? "text-amber-300" : "text-white hover:text-amber-300"
                   }`
                 }
               >
-                {link?.name}
-                {link?.children && <span>▾</span>}
+                {link.name}
+                {link.children && <span>▾</span>}
               </NavLink>
 
               {/* DROPDOWN */}
-              {link?.children && (
-                <>
-                  <div
-                    className={`absolute left-0 top-10 mt-1 w-48 bg-white text-black  transition-all duration-200 ${openDropdown === link.id
+              {link.children && (
+                <div
+                  className={`absolute left-0 top-10 mt-1 w-48 bg-white text-black transition-all duration-200 ${openDropdown === link.id
                       ? "opacity-100 translate-y-0 visible"
                       : "opacity-0 -translate-y-2 invisible"
-                      }`}
-                  >
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.id}
-                        to={child.href}
-                        className="block px-5 py-2 hover:bg-amber-100 text-sm"
-                      >
-                        {child.name}
-                      </Link>
-                    ))}
-                  </div>
-                </>
+                    }`}
+                >
+                  {link.children.map((child) => (
+                    <Link
+                      key={child.id}
+                      to={child.href}
+                      className="block px-5 py-2 hover:bg-amber-100 text-sm"
+                    >
+                      {child.name}
+                    </Link>
+                  ))}
+                </div>
               )}
             </div>
           ))}
+
+          {/* WHATSAPP BUTTON */}
           <button
             onClick={() =>
               window.open(
-                `https://wa.me/${PERSONAL_NUMBER}?text=Hi%20I%20need%20decoration%20service",
-                "_blank`
+                `https://wa.me/${PERSONAL_NUMBER}?text=Hi%20I%20need%20decoration%20service`,
+                "_blank"
               )
             }
             className="text-black font-mono font-bold text-sm bg-amber-300 py-1 px-5 rounded-full cursor-pointer hover:bg-amber-400"
@@ -89,7 +88,6 @@ function Navbar({ navLinks }) {
             ) : (
               <RiMenu3Fill size={28} className="text-amber-300" />
             )}
-
           </button>
         </div>
       </div>
@@ -103,21 +101,29 @@ function Navbar({ navLinks }) {
           <div key={link.id} className="py-2">
 
             {/* MAIN */}
-            <button
-              className="w-full flex justify-between items-center py-2 text-sm"
-              onClick={() =>
-                link.children
-                  ? setOpenDropdown(
+            {link.children ? (
+              <button
+                className="w-full flex justify-between items-center py-2 text-sm"
+                onClick={() =>
+                  setOpenDropdown(
                     openDropdown === link.id ? null : link.id
                   )
-                  : setMobileOpen(false)
-              }
-            >
-              <span className="hover:text-amber-300 cursor-pointer">{link.name}</span>
-              {link.children && <span>▾</span>}
-            </button>
+                }
+              >
+                <span className="hover:text-amber-300">{link.name}</span>
+                <span>▾</span>
+              </button>
+            ) : (
+              <Link
+                to={link.href}
+                className="block py-2 text-sm hover:text-amber-300"
+                onClick={() => setMobileOpen(false)}
+              >
+                {link.name}
+              </Link>
+            )}
 
-            {/* DROPDOWN (accordion) */}
+            {/* DROPDOWN */}
             {link.children && (
               <div
                 className={`overflow-hidden transition-all duration-300 ${openDropdown === link.id ? "max-h-40" : "max-h-0"
@@ -141,6 +147,18 @@ function Navbar({ navLinks }) {
           </div>
         ))}
 
+        {/* MOBILE WHATSAPP */}
+        <button
+          onClick={() =>
+            window.open(
+              `https://wa.me/${PERSONAL_NUMBER}?text=Hi%20I%20need%20decoration%20service`,
+              "_blank"
+            )
+          }
+          className="w-full mt-3 text-black font-mono font-bold text-sm bg-amber-300 py-2 rounded-full hover:bg-amber-400"
+        >
+          Whatsapp
+        </button>
       </div>
     </>
   );

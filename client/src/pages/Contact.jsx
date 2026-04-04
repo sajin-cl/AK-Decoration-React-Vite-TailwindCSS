@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FiAlertTriangle } from "react-icons/fi";
 import Typewriter from "typewriter-effect";
 import { motion } from 'framer-motion';
-import { SOCIAL_LINKS } from "@/config/data";
+import { SOCIAL_LINKS, PERSONAL_NUMBER } from "@/config/data";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -24,9 +24,8 @@ const Contact = () => {
   const submitForm = (e) => {
     e.preventDefault();
 
-    const phoneNumber = "+918056825814";
     const text = `Name: ${formData.name}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
-    const url = `https://wa.me/${phoneNumber}?text=${text}`;
+    const url = `https://wa.me/+${PERSONAL_NUMBER}?text=${text}`;
 
     window.open(url, "_blank");
 
