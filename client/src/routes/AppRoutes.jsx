@@ -3,9 +3,12 @@ import App from '@/App';
 import Home from '@/pages/Home';
 import AboutUs from '@/pages/AboutUs';
 import Contact from '@/pages/Contact';
-import Gallery from '@/components/Gallery'
 import { GALLERY_DATA } from "@/config/data";
+import { lazy, Suspense } from 'react';
+import { ShimmerFeaturedGallery } from 'react-shimmer-effects';
 
+
+const Gallery = lazy(() => import('@/components/Gallery'));
 
 export const router = createBrowserRouter([
   {
@@ -15,8 +18,14 @@ export const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'about', element: <AboutUs /> },
       { path: 'contact', element: <Contact /> },
-      { path: 'Gallery', element: <Gallery images={GALLERY_DATA}  /> }
-    ]
-  }
+      {
+        path: 'gallery', 
+        element: (
+          <Suspense fallback={<ShimmerFeaturedGallery row={3} col={2} card frameHeight={600} />}>
+            <Gallery images={GALLERY_DATA}  />
+          </Suspense>
+        ),
+      },
+    ],
+  },
 ]);
-

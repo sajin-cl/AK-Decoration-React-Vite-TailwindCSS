@@ -1,25 +1,44 @@
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.10, 
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: -20 }, 
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } }, 
+};
+
 function Gallery({ images, limit }) {
   return (
-    <section className="py-12 px-4 bg-white/25">
-      <h2 className="text-3xl font-bold text-center mb-8 text-white">
-        OUR WORK
-      </h2>
-
+    <motion.section
+      className="py-12 px-4 bg-white/25"
+      variants={containerVariants}
+      initial="hidden"
+      animate="show"
+    >
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.slice(0, limit).map((img, index) => (
-          <div
+          <motion.div
             key={index}
             className="overflow-hidden shadow-md group cursor-pointer"
+            variants={cardVariants}
           >
             <img
               src={img}
               alt={`gallery-${index}`}
+              loading="lazy"
               className="w-full h-56 object-cover transform group-hover:scale-110 transition duration-300"
             />
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 
