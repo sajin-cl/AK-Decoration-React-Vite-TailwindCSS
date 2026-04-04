@@ -57,7 +57,7 @@ function AboutUs() {
             src="/founder.jpeg"
             alt="Founder"
             className="w-full h-full object-cover"
-            loading="lazy"
+            fetchPriority="high"
           />
         </div>
 
