@@ -23,7 +23,7 @@ function Intro() {
               "_blank"
             )
           }
-          className="text-white font-mono text-sm px-20 py-2 border-2 border-amber-300 py-1 px-6 cursor-pointer hover:text-amber-300 hover:border-amber-400  transition duration-500"
+          className="text-white font-mono text-sm px-20 py-2 border-2 border-amber-300  cursor-pointer hover:text-amber-300 hover:border-amber-400  transition duration-500"
         >
           BOOK NOW
         </button>
