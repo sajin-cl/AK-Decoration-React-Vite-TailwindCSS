@@ -1,4 +1,4 @@
-import { NAV_LINKS, SOCIAL_lINKS } from "@/config/data";
+import { NAV_LINKS, SOCIAL_LINKS } from "@/config/data";
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom'
 
@@ -33,7 +33,7 @@ const Footer = () => {
 
         {/* Social */}
         <div className="text-white text-xl flex gap-3">
-          {SOCIAL_lINKS.map((social, idx) => {
+          {SOCIAL_LINKS.map((social, idx) => {
             const Icon = social.icon;
             return (
               <Link
