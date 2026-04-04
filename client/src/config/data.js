@@ -1,5 +1,6 @@
 import { MdAttachEmail, MdOutlineWifiCalling3, MdWhatsapp } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
+import { href } from "react-router-dom";
 
 export const PERSONAL_NUMBER = 917550305180;
 export const EXPERIENCE = new Date().getFullYear() - 2021;
@@ -73,14 +74,32 @@ export const SERVICES = [
 ];
 
 /* --------------------------------------------------Social Links------------------------------------------------------------------- */
-export const SOCIAL_lINKS = [
+export const SOCIAL_LINKS = [
   {
     icon: MdAttachEmail,
     href: "https://mail.google.com/mail/?view=cm&fs=1&to=sajincl222@gmail.com&su=Decoration%20Service%20Inquiry&body=Hi%20AK%20Decoration,%0A%0AI%20would%20like%20to%20inquire%20about%20your%20decoration%20services.%20Please%20share%20details%20about%20availability,%20pricing,%20and%20packages.%0A%0AThank%20you.",
+    label: 'ajithkumar@gmail.com',
+    type: 'Email'
   },
-  { icon: MdOutlineWifiCalling3, href: `tel:+${PERSONAL_NUMBER}` },
-  { icon: FaInstagram, href: "https://www.instagram.com/ak_decoration_service/?hl=en" },
-  { icon: MdWhatsapp, href: `https://wa.me/${PERSONAL_NUMBER}?text=Hello%20I%20need%20decoration%20service` }
+  {
+    icon: MdOutlineWifiCalling3,
+    href: `tel:+${PERSONAL_NUMBER}`,
+    label: '+91 7550305180',
+    type: 'Mobile No'
+
+  },
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/ak_decoration_service/?hl=en",
+    label: 'instagram.com/ak_decoration_service',
+    type: 'Instagram'
+  },
+  {
+    icon: MdWhatsapp,
+    href: `https://wa.me/${PERSONAL_NUMBER}?text=Hello%20I%20need%20decoration%20service`,
+    label: 'wa.me/917550305180',
+    type: 'Whatsapp'
+  }
 ];
 
 export const GALLERY_DATA = [
