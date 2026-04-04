@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'about', element: <AboutUs /> },
       { path: 'contact', element: <Contact /> },
-      { path: 'Gallery', element: <Gallery images={GALLERY_DATA} limit={5} /> }
+      { path: 'Gallery', element: <Gallery images={GALLERY_DATA}  /> }
     ]
   }
 ]);

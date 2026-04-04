@@ -103,9 +103,27 @@ export const SOCIAL_LINKS = [
 ];
 
 export const GALLERY_DATA = [
-  "https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/169190/pexels-photo-169190.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/265947/pexels-photo-265947.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/796606/pexels-photo-796606.jpeg?auto=compress&cs=tinysrgb&w=800",
-  "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800",
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/q_auto,f_auto/1_rywqnx.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/2_c4bxqt.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/3_kewmnw.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/4_lwch6p.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/5_mmggm6.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/6_zmpt5c.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/7_hjka9k.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/8_hmomcn.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/9_htlnb1.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/10_r4uada.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/11_c0p9le.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/12_kgtje7.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/13_eiynap.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/14_u4g00w.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/15_vtclwx.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/16_topk1s.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/17_dmmex3.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/18_kptevg.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/19_tbhywv.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/20_gqqxmo.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/21_lcqrwz.webp',
+  'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/22_xlznap.webp'
+
 ];
