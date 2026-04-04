@@ -1,6 +1,5 @@
 import { NAV_LINKS, SOCIAL_LINKS } from "@/config/data";
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -38,7 +37,7 @@ const Footer = () => {
             return (
               <a
                 key={idx}
-                href={social.href}  
+                href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-white/10 hover:text-amber-300 transition"
