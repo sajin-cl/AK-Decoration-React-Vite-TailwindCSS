@@ -127,3 +127,9 @@ export const GALLERY_DATA = [
   'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/22_xlznap.webp'
 
 ];
+
+export const WEDDING_DECOR = [
+  { title: 'Stage Decoration', img: 'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/4_lwch6p.webp' },
+  { title: 'Floral Setup', img: 'floral-setup.webp' },
+  { title: 'Mandap Design', img: 'mandap-design.webp' }
+]
