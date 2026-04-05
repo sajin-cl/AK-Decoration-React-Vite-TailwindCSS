@@ -7,6 +7,9 @@ import { GALLERY_DATA } from "@/config/data";
 import { lazy, Suspense } from 'react';
 import { ShimmerFeaturedGallery } from 'react-shimmer-effects';
 import NotFound from '@/components/NotFound';
+import WeddingDecoration from '@/pages/WeddingDecoration';
+import FloralDecoration from '@/pages/FloralDecoration';
+import StageDecoration from '../pages/StageDecoration';
 
 
 const Gallery = lazy(() => import('@/components/Gallery'));
@@ -27,6 +30,9 @@ export const router = createBrowserRouter([
           </Suspense>
         ),
       },
+      { path: 'wedding-decoration', element: <WeddingDecoration /> },
+      { path: 'floral-decoration', element: <FloralDecoration /> },
+      { path: 'stage-decoration', element: <StageDecoration /> },
       { path: '*', element: <NotFound /> },
     ],
   },
