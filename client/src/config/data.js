@@ -129,7 +129,41 @@ export const GALLERY_DATA = [
 ];
 
 export const WEDDING_DECOR = [
-  { title: 'Stage Decoration', img: 'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/4_lwch6p.webp' },
-  { title: 'Floral Setup', img: 'floral-setup.webp' },
-  { title: 'Mandap Design', img: 'mandap-design.webp' }
-]
+  { id: 1, title: 'Stage Decoration', img: 'https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/4_lwch6p.webp' },
+  { id: 2, title: 'Floral Setup', img: 'floral-setup.webp' },
+  { id: 3, title: 'Mandap Design', img: 'mandap-design.webp' }
+];
+
+
+export const FLORAL_DECOR = [
+  {
+    id: 1,
+    title: "Rose Stage Decoration",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/Rose_Stage_Decoration_j7szzl.webp",
+  },
+  {
+    id: 2,
+    title: "Jasmine Wedding Setup",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/74a0701be7387d24865789001c2a51ac_mtvhaj.jpg",
+  },
+  {
+    id: 3,
+    title: "Floral Arch Decoration",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/b2b9f839c3c8647363e3e7899e349bb4_zikkpv.jpg",
+  },
+  {
+    id: 4,
+    title: "Entrance Flower Decoration",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/c84cf51b4d05267fddf629d751977778_idnsnd.jpg",
+  },
+  {
+    id: 5,
+    title: "Temple Style Floral Design",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/mandap-design_r0ihqt.webp",
+  },
+  {
+    id: 6,
+    title: "Reception Floral Backdrop",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/f5fd787b2c47d0072c188a24ada8a330_j3p2om.jpg",
+  },
+];

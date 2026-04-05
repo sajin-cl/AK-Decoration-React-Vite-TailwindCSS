@@ -13,9 +13,9 @@ const WeddingDecoration = () => {
       </p>
 
       <div className="grid md:grid-cols-3 gap-6">
-        {WEDDING_DECOR.map((dec, idx) => (
+        {WEDDING_DECOR.map((dec) => (
           <div
-            key={idx}
+            key={dec?.id}
             className="bg-white/50 shadow-lg rounded p-4">
             <img src={dec?.img} alt={dec?.title} className="mb-3 h-52 w-full" />
             <h2 className="font-semibold text-sm text-center">{dec?.title}</h2>
