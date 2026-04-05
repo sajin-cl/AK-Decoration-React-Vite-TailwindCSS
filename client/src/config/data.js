@@ -167,3 +167,37 @@ export const FLORAL_DECOR = [
     img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/f5fd787b2c47d0072c188a24ada8a330_j3p2om.jpg",
   },
 ];
+
+
+export const STAGE_DECOR = [
+  {
+    id: 1,
+    title: "Wedding Stage Decoration",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/0b51191c2945d0b76aa095e80d1de202_cqxvas.jpg",
+  },
+  {
+    id: 2,
+    title: "Reception Stage Setup",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/d25a635c1c9c5777cd1b9e51382b8cfa_er7dwk.jpg",
+  },
+  {
+    id: 3,
+    title: "Birthday Stage Decoration",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/cb3ebba6b289e873e19b517ea4101f63_vlqwsy.jpg",
+  },
+  {
+    id: 4,
+    title: "Engagement Stage Design",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/0bd0b1fb268d1c0cd29b0fdac4e6d151_giovnj.jpg",
+  },
+  {
+    id: 5,
+    title: "LED Backdrop Stage",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/44b27e3f5af31517c2592874d8cbd990_ra5u8l.jpg",
+  },
+  {
+    id: 6,
+    title: "Traditional Stage Setup",
+    img: "https://res.cloudinary.com/dpc9p1npw/image/upload/f_auto,q_auto/51f5d5e8f0c321579f6e3670cd2ade35_imdwoh.jpg",
+  },
+];
