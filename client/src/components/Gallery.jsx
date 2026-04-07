@@ -26,7 +26,7 @@ function Gallery({ images, limit }) {
         {images.slice(0, limit).map((img, index) => (
           <motion.div
             key={index}
-            className="overflow-hidden shadow-md group cursor-pointer"
+            className="overflow-hidden shadow-md group cursor-pointer p-3 bg-white/50 rounded-b-sm"
             variants={cardVariants}
             whileTap={{ scale: 0.95 }}  
           >
@@ -34,7 +34,7 @@ function Gallery({ images, limit }) {
               src={img}
               alt={`gallery-${index}`}
               loading="lazy"
-              className="w-full h-56 object-cover"
+              className="w-full h-56 object-cover rounded-sm"
               whileTap={{ scale: 1.1 }}  
               whileHover={{ scale: 1.1 }} 
               transition={{ duration: 0.3 }}

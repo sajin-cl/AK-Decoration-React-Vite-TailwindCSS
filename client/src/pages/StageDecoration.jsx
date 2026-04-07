@@ -4,10 +4,10 @@ const StageDecoration = () => {
   return (
     <div className="px-6 py-10 mx-auto bg-black/25 min-h-screen">
       <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-        Stage Decoration in Kanyakumari
+        STAGE DECORATIONS IN KANYAKUMARI
       </h1>
 
-      <p className="text-amber-200 mb-6 text-xs">
+      <p className="text-amber-100 mb-6 text-xs">
         We design attractive stage decorations for weddings, birthday parties,
         and corporate events with creative themes and lighting.
       </p>
