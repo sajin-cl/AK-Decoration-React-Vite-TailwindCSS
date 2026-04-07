@@ -4,10 +4,10 @@ const FloralDecoration = () => {
   return (
     <div className="px-6 py-10 mx-auto bg-black/25 min-h-screen">
       <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-        Floral Decoration in Kanyakumari
+        FLORAL DECORATIONS IN KANYAKUMARI
       </h1>
 
-      <p className="text-amber-200 mb-6 text-xs">
+      <p className="text-amber-100 mb-6 text-xs">
         We offer fresh and artificial floral decoration services for weddings,
         birthdays, and special events in Kanyakumari district.
       </p>
